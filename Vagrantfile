@@ -39,7 +39,7 @@ Vagrant.configure(2) do |config|
       git clone https://github.com/rockstor/rockstor-core.git 
       cd rockstor-core
       python bootstrap.py -c buildout.cfg
-      ./bin/buildout -N buildout.cfg
+      ./bin/buildout -N -c buildout.cfg
       SHELL
     end
   end
